@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>邮件系统｜语言学午餐</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body style="overflow:hidden;">
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Ling-Lunch<br><span>邮箱登录</span></div>
+		</div>
+		<br>
+		<div class="login">
+            <form name="form1" action="https://exmail.qq.com/cgi-bin/login" target="_blank" method="post" onsubmit="return checkInput()">
+                <input type="hidden" name="firstlogin" value="false" />
+                <input type="hidden" name="errtemplate" value="dm_loginpage" />
+                <input type="hidden" name="aliastype" value="other" />
+                <input type="hidden" name="dmtype" value="bizmail" />
+                <input type="hidden" name="p" value="" />
+
+                <input type="text" name="uin" placeholder="用户名" value=""><span style="position:inline;font-size:20px">&nbsp;&nbsp;@linglunch.com</span>
+                <input type="hidden" name="domain" value="linglunch.com" /><br>
+				<input type="password" name="pwd" placeholder="密码" value=""><br>
+				<input type="submit" value="登录">
+
+            </form>
+		</div>
+
+  <script src='http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js'></script>
+
+</body>
+
+</html>
